@@ -1,8 +1,8 @@
 import React from 'react'
 import TaskList from './tasklist'
 
-const TaskLists = ({ lists, onButtonSelected }) => {
-  const data = lists.map((list) => <TaskList {...list} key={list.id} onButtonSelected={onButtonSelected} />)
+const TaskLists = ({ lists }) => {
+  const data = lists.map((list) => <TaskList {...list} key={list.id} />)
   return (
     <div className='tasklists'>
         {data}

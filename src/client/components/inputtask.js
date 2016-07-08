@@ -1,9 +1,9 @@
 import React from 'react'
 import CustomButton from './custombutton'
 
-const InputTask = ({ type, message, onButtonSelected }) =>
+const InputTask = ({ type, message }) =>
     <div className='input-task'>
-      <input placeholder={message} type={type} /><CustomButton message='Ajouter' onClick={onButtonSelected} />
+      <input placeholder={message} type={type} /><CustomButton message='Ajouter' />
     </div>
 
 InputTask.propTypes = {
